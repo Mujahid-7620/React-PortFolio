@@ -1,0 +1,89 @@
+/* Main container for the entire Home page */
+.home-container {
+  font-family: Arial, sans-serif; /* Simple, readable font */
+  background-color: white; /* Plain white background */
+  color: #333; /* Dark text for readability */
+  min-height: 100vh; /* Full height of the screen */
+  padding: 20px; /* Basic padding around the page */
+  max-width: 800px; /* Limit width for clean layout */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Intro section styling */
+.intro {
+  text-align: center; /* Center all text in intro */
+  margin-bottom: 30px; /* Space below intro */
+}
+
+.name {
+  font-size: 2rem; /* Large name */
+  margin: 0; /* No extra margin */
+  color: #000; /* Black for emphasis */
+}
+
+.role {
+  font-size: 1.2rem; /* Medium role text */
+  margin: 10px 0; /* Small margin */
+  color: #555; /* Gray for subtitle */
+}
+
+.intro-text {
+  font-size: 1rem; /* Normal text size */
+  line-height: 1.5; /* Readable spacing */
+  margin: 10px 0; /* Small margin */
+}
+
+/* Details section for skills and projects */
+.details {
+  margin-bottom: 30px; /* Space below details */
+}
+
+.details h3 {
+  font-size: 1.2rem; /* Section headers */
+  margin-top: 20px; /* Space above headers */
+  margin-bottom: 10px; /* Space below headers */
+  color: #000; /* Black headers */
+}
+
+.details ul {
+  list-style-type: disc; /* Simple bullet points */
+  padding-left: 20px; /* Indent bullets */
+}
+
+.details li {
+  margin: 5px 0; /* Space between list items */
+}
+
+/* Download section */
+.download {
+  text-align: center; /* Center the button */
+}
+
+.download-btn {
+  display: inline-block; /* Make it look like a button */
+  background-color: #007bff; /* Blue color for button */
+  color: white; /* White text */
+  padding: 10px 20px; /* Padding for size */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Normal text size */
+  border-radius: 4px; /* Slight rounding */
+}
+
+.download-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive for mobile screens */
+@media (max-width: 600px) {
+  .home-container {
+    padding: 15px; /* Smaller padding on mobile */
+  }
+
+  .name {
+    font-size: 1.8rem; /* Smaller name on mobile */
+  }
+
+  .role {
+    font-size: 1.1rem; /* Smaller role */
+  }
+}
