@@ -1,0 +1,125 @@
+/* Overall container for the Home page */
+.home-container {
+  font-family: Arial, sans-serif; /* Simple, clean font */
+  color: #333; /* Dark text for readability */
+  background: linear-gradient(to bottom, #f0f4f8, #e1e8ed); /* Soft light gradient background */
+  min-height: 100vh; /* Full viewport height */
+  padding: 20px; /* Basic padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+/* Intro section styling */
+.intro-section {
+  text-align: center; /* Center-align text */
+  margin-bottom: 40px; /* Space below intro */
+  max-width: 800px; /* Limit width for readability */
+}
+
+.name {
+  font-size: 2.5rem; /* Large name */
+  margin: 0;
+  color: #2c3e50; /* Professional dark color */
+}
+
+.title {
+  font-size: 1.5rem; /* Medium title */
+  margin: 10px 0;
+  color: #34495e; /* Slightly lighter */
+}
+
+.education {
+  font-size: 1.2rem; /* Education text */
+  margin: 10px 0;
+  color: #7f8c8d; /* Muted color */
+}
+
+.summary {
+  font-size: 1rem; /* Summary text */
+  line-height: 1.6; /* Readable line height */
+  margin: 20px 0;
+  max-width: 600px; /* Limit width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cards section: Flexbox for layout */
+.cards-section {
+  display: flex;
+  justify-content: space-around; /* Space cards evenly */
+  flex-wrap: wrap; /* Wrap on smaller screens */
+  gap: 20px; /* Space between cards */
+  margin-bottom: 40px; /* Space below cards */
+  max-width: 1000px; /* Limit width */
+}
+
+/* Individual card styling */
+.card {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px; /* Inner padding */
+  width: 250px; /* Fixed width for cards */
+  text-align: center; /* Center content */
+  transition: transform 0.2s; /* Subtle hover effect (simple) */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card h3 {
+  margin-top: 0; /* Remove top margin */
+  color: #2c3e50; /* Dark header */
+}
+
+.card ul {
+  list-style: none; /* Remove bullets */
+  padding: 0;
+}
+
+.card li {
+  margin: 5px 0; /* Space between list items */
+}
+
+/* Download section */
+.download-section {
+  text-align: center; /* Center button */
+}
+
+.download-btn {
+  display: inline-block; /* Button-like appearance */
+  background-color: #3498db; /* Professional blue */
+  color: white; /* White text */
+  padding: 12px 24px; /* Padding for size */
+  border-radius: 5px; /* Rounded button */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Readable font */
+  transition: background-color 0.3s; /* Simple hover effect */
+}
+
+.download-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+  .cards-section {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+  }
+
+  .card {
+    width: 80%; /* Wider cards on mobile */
+    max-width: 300px; /* Limit max width */
+  }
+
+  .name {
+    font-size: 2rem; /* Smaller name on mobile */
+  }
+
+  .title {
+    font-size: 1.2rem; /* Smaller title */
+  }
+}
